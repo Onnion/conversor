@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: radial-gradient(#b29f94, #603813);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    width: 100%;
+    height: 100%;
+}
+
+.form__container {
+    background: #232428;
+    padding: 35px;
+    border-radius: 1rem;
+}
+
+.form__heading {
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+
+.form__unit {
+    margin-bottom: 2rem;
+    position: relative;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.form__label {
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    transform: translateY(-50%);
+    color: #8c8c8c;
+    font-size: .9rem;
+    text-transform: capitalize;
+    transition: font 0.1s eas9, top 0.1s ease, transform 0.1s ease, -webkit-transform 0.1s ease, -moz-transform 0.1s ease, -o-transform 0.1s ease;
+    pointer-events: none;
+}
+
+.form__input {
+    padding: 1.6rem 2rem 0;
+    width: 100%;
+    background: #333;
+    border: none;
+    outline: none;
+    color: #fff;
+    line-height: 2rem;
+    height: 2rem;
+    border-radius: 3px;
+    border: 2px solid transparent;
+    transition: all .3s;
+}
+
+.form__input:focus {
+    background: #454545;
+}
+
+.form__input:focus~.form__label, .form__input:not(:placeholder-shown)~.form__label {
+    font-size: .8rem;
+    transform: translateY(0);
+    top: .7rem;
+}
+
+.form__submit__button {
+    background: #0094E4;
+    display: block;
+    border: none;
+    padding: 15px 20px;
+    width: 100%;
+    color: #fff;
+    border-radius: 3px;
+    outline: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all .3s;
+    margin-top: 1rem;
+}
+
+.form__submit__button:hover {
+    background: #0073b1;
+}
+
+.result {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.result h1 {
+    color: #fff;
+    font-size: 5rem;
+}
+
+.result img {
+    width: 60px;
+    margin-left: 40px;
+}
