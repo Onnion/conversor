@@ -5,9 +5,9 @@ $(document).ready(function () {
         thousands: "."
     });
 
-    $('.form__submit__button').click(function() {
+    $('.form__submit__button').click(function () {
         const value = $(".form__input.currency").val();
-        const price =  value.replace('R$ ', '').replace(',', '.');
+        const price = value.replace('R$ ', '').replace(/\./g, "").replace(',', '.');
         const hb_value = 44;
 
         console.log(price);
